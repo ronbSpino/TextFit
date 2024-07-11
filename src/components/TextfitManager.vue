@@ -12,11 +12,12 @@ export default {
     i_PrioritizeElement: String, // String of ClassName that will prioritize adjusting i_SameSizeElements FontSize to its min FontSize
     i_ResizeStopOn: String,
     i_Component: String,
+    isMobile:Boolean,
   },
   methods: {
     // all of the elements that should be textfited
     TextfitLogic(i_Source) {
-      if (!this.$store.getters[this.i_ResizeStopOn]) {
+      if (!this.this.i_ResizeStopOn) {
         // This clause is for not triggering textfit while the components is not displayed,
         // a better solution is to remove the resize eventlistner on component destroyed but at the time of writing it couldnt make it happen
         return;
@@ -130,7 +131,7 @@ export default {
     this.$nextTick(() => {
       this.handleTextfit();
       window.addEventListener("textfit", this.handleTextfit);
-      if (!this.$store.getters["isMobile"]) {
+      if (!this.isMobile) {
         window.addEventListener("resize", this.handleDebounce());
       } else {
         window.addEventListener("resize", this.handleResize);
