@@ -1,11 +1,17 @@
-const path = require('path')
-
 module.exports = {
-    configureWebpack: {
-        resolve: {
-            alias: {
-                '@': path.resolve(__dirname, 'src')
-            }
-        }
-    }
-}
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.ts$/,
+          loader: "ts-loader",
+          exclude: /node_modules/,
+        },
+        {
+          test: /\.vue$/,
+          loader: "vue-loader",
+        },
+      ],
+    },
+  },
+};

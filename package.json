@@ -1,6 +1,6 @@
 {
   "name": "textfit-spino",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "A Vue.js 2 component library for dynamically adjusting text sizes within elements using TextFit. Includes components for managing text fitting and setting text width limits.",
   "author": "ron.b <ron.b@spinomenal.com>",
   "scripts": {
@@ -9,10 +9,12 @@
     "lint:fix": "eslint --ext .js,.ts,.vue src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "dist/index.js",
+  "main": "dist/textfit-spino.umd.js",
+  "module": "dist/textfit-spino.umd.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./dist/textfit-spino.umd.js": "./dist/textfit-spino.umd.js"
+    ".": "./dist/textfit-spino.umd.js",
+    "./dist/textfit-spino.umd.js": "./dist/textfit-spino.umd.js",
+    "./dist/textfit-spino.common.js": "./dist/textfit-spino.common.js"
   },
   "types": "dist/index.d.ts",
   "dependencies": {
@@ -26,10 +28,10 @@
     "@vue/cli-plugin-typescript": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-typescript": "^13.0.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.57.1",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-vue": "^9.32.0",
     "node-sass": "^9.0.0",
     "sass-loader": "^10.0.2",
     "typescript": "^5.4.5"
