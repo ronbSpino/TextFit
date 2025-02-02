@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "jquery": "^1.9.1",
     "textfit": "^2.x",
@@ -29,6 +30,9 @@
     "sass-loader": "^10.0.2",
     "typescript": "^5.4.5"
   },
+  "peerDependencies": {
+    "vue": "^2.6.0"
+  },
   "keywords": [
     "vue",
     "vue2",
@@ -38,5 +42,12 @@
     "vue-components"
   ],
   "license": "MIT",
-  "types": "dist/index.d.ts"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronbSpino/TextFit.git"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
