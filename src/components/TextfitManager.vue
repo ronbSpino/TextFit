@@ -10,14 +10,14 @@ export default {
     i_ElementToTextfit: Array,
     i_SameSizeElements: Array, // String[] of ClassName from Textfit.vue, all of the ClassName in this array will get adjusted to the Min FontSize between them
     i_PrioritizeElement: String, // String of ClassName that will prioritize adjusting i_SameSizeElements FontSize to its min FontSize
-    i_ResizeStopOn: String,
+    i_ResizeStopOn: Boolean,
     i_Component: String,
     isMobile:Boolean,
   },
   methods: {
     // all of the elements that should be textfited
     TextfitLogic(i_Source) {
-      if (!this.this.i_ResizeStopOn) {
+      if (!this.i_ResizeStopOn) {
         // This clause is for not triggering textfit while the components is not displayed,
         // a better solution is to remove the resize eventlistner on component destroyed but at the time of writing it couldnt make it happen
         return;
