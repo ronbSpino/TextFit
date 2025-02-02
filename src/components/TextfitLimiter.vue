@@ -80,9 +80,8 @@ export default {
   watch: {
     i_Text(i_NewText) {
       if (this.i_isReactiveFix) {
-        if (this.i_Class == "counter-text") {
-          $(".textfit-counter-text span").text(i_NewText);
-        }
+          $(`.textfit-${this.i_Class} span`).text(i_NewText);
+          window.dispatchEvent(new Event("textfit"));       
       }
     },
   },
@@ -97,6 +96,10 @@ export default {
 .normal_line {
   white-space: nowrap !important;
 }
+
+
+//remove those css style class later , they will be added in in the parent component 
+
 
 // this class is for resizing textfit font size
 .textfit-max-bet {
