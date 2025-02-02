@@ -1,6 +1,6 @@
 {
   "name": "textfit-spino",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Vue.js 2 component library for dynamically adjusting text sizes within elements using TextFit. Includes components for managing text fitting and setting text width limits.",
   "author": "ron.b <ron.b@spinomenal.com>",
   "scripts": {
@@ -10,6 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "dist/index.js",
+  "exports": {
+    ".": "dist/index.js"
+  },
   "types": "dist/index.d.ts",
   "dependencies": {
     "jquery": "^1.9.1",
