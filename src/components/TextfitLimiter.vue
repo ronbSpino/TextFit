@@ -102,34 +102,36 @@ export default {
 
 
 // this class is for resizing textfit font size
-.textfit-max-bet {
-  @include center-elements;
-  text-align: center;
-  line-height: 1;
-  height: 100%;
-  font-size: 15px; // initial fontsize - prevent major jump
-  width: 60%;
-}
+// .textfit-max-bet {
+//   @include center-elements;
+//   text-align: center;
+//   line-height: 1;
+//   height: 100%;
+//   font-size: 15px; // initial fontsize - prevent major jump
+//   width: 60%;
+// }
 
-.textfit-buy-feature-text,
-.textfit-buy-feature-text-pc {
-  text-align: center;
-  line-height: 1;
-  height: 100%;
-  width: 60%;
-  font-size: 15px; // initial fontsize - prevent major jump
-  @include center-elements;
-}
+// .textfit-buy-feature-text,
+// .textfit-buy-feature-text-pc {
+//   text-align: center;
+//   line-height: 1;
+//   height: 100%;
+//   width: 60%;
+//   font-size: 15px; // initial fontsize - prevent major jump
+//   @include center-elements;
+// }
 
-.textfit-counter-text {
-  width: 90%;
-  height: 100%;
-  text-align: center;
-  font-size: 8px;
-  background: transparent; // MUST to not hide the Extra FS animation
-  position: relative;
-  bottom: 0.5px; // MUST Extra FS animation layout plays with limiter position
-  right: 2px; // MUST Extra FS animation layout plays with limiter position
-  @include center-elements;
-}
+// .textfit-counter-text {
+//   width: 90%;
+//   height: 100%;
+//   text-align: center;
+//   font-size: 8px;
+//   background: transparent; // MUST to not hide the Extra FS animation
+//   position: relative;
+//   bottom: 0.5px; // MUST Extra FS animation layout plays with limiter position
+//   right: 2px; // MUST Extra FS animation layout plays with limiter position
+//   @include center-elements;
+// }
+
+
 </style>
