@@ -5,7 +5,7 @@
 <script>
 import textFit from "textfit";
 export default {
-  name: "TextfitManager",
+  name: "TextfitResizer",
   props: {
     i_ElementToTextfit: Array,
     i_SameSizeElements: Array, // String[] of ClassName from Textfit.vue, all of the ClassName in this array will get adjusted to the Min FontSize between them

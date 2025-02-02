@@ -1,4 +1,4 @@
-import TextfitManager from './components/TextfitManager.vue';
+import TextfitResizer from './components/TextfitResizer.vue';
 import TextfitLimiter from './components/TextfitLimiter.vue';
 
-export { TextfitManager, TextfitLimiter };
+export { TextfitResizer, TextfitLimiter };
