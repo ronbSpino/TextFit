@@ -12,7 +12,7 @@ export default {
     i_PrioritizeElement: String, // String of ClassName that will prioritize adjusting i_SameSizeElements FontSize to its min FontSize
     i_ResizeStopOn: Boolean,
     i_Component: String,
-    isMobile:Boolean,
+    isMobile: Boolean,
   },
   methods: {
     // all of the elements that should be textfited

@@ -20,15 +20,19 @@ import { findLongestWord } from "@/utils/format";
 export default {
   name: "TextfitLimiter",
   data() {
-    return {
-    };
+    return {};
   },
   props: {
     i_Class: String,
     i_Text: String,
-    config:{
+    config: {
       type: Object,
-      default: () => ({ minCharWidth: 1, maxCharWidth: 50, minPercentage: 65, maxPercentage: 85 }),
+      default: () => ({
+        minCharWidth: 1,
+        maxCharWidth: 50,
+        minPercentage: 65,
+        maxPercentage: 85,
+      }),
       required: true,
     },
     i_isReactiveFix: {
@@ -71,7 +75,7 @@ export default {
       );
     },
     OverrideWidth(i_Percentage) {
-      /// check if it needed 
+      /// check if it needed
 
       // this is an example for when we need to override buy-feature-text on isPortrait
       // if (this.i_Class == "buy-feature-text") {
@@ -84,8 +88,8 @@ export default {
   watch: {
     i_Text(i_NewText) {
       if (this.i_isReactiveFix) {
-          $(`.textfit-${this.i_Class} span`).text(i_NewText);
-          window.dispatchEvent(new Event("textfit"));       
+        $(`.textfit-${this.i_Class} span`).text(i_NewText);
+        window.dispatchEvent(new Event("textfit"));
       }
     },
   },
@@ -100,5 +104,4 @@ export default {
 .normal_line {
   white-space: nowrap !important;
 }
-
 </style>
