@@ -12,7 +12,7 @@ npm install textfit-spino
 
 ## Usage TextfitManager
 
-Import and use the `TextfitManager` component in your Vue components:
+In your template, use the `TextfitManager` component. You can register it in `App.vue` and use it globally.
 
 ```javascript
 import { TextfitManager } from "textfit-spino";
@@ -54,7 +54,7 @@ In your template, use the `TextfitManager` component:
 
 ## Usage TextfitLimiter
 
-Import and use the `TextfitManager` component in your Vue components:
+In all places where you want to fit text elements dynamically, use the `TextfitLimiter` component instead with the following implementation.
 
 ```javascript
 import { TextfitLimiter } from "textfit-spino";
